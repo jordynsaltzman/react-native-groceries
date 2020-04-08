@@ -8,7 +8,7 @@ Overall, this was a good starter project to get aquainted with React Native and 
 
 ## Preview
 
-
-<img src="assets/images/RN_Screenshot.png"  width="500">
 <img src="assets/images/RN_Screenshot2.png"  width="500">
+<img src="assets/images/RN_Screenshot.png"  width="500">
+
 
