@@ -1,14 +1,26 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity, Button } from "react-native";
+import AwesomeButtonRick from "react-native-really-awesome-button/src/themes/rick";
 
 const ListItem = (props) => {
   return (
-    <TouchableOpacity
-      activeOpacity={0.8}
-      onPress={props.onDelete.bind(this, props.id)}
-    >
+    <TouchableOpacity activeOpacity={0.8}>
       <View style={styles.listItem}>
-        <Text style={styles.listItemText}>{props.title}</Text>
+        <View style={styles.listItemText}>
+          <Text style={{ fontSize: 18, fontFamily: "InterLight" }}>
+            {props.title}
+          </Text>
+        </View>
+        <View style={styles.button}>
+          <AwesomeButtonRick
+            type="secondary"
+            width={50}
+            textSize={18}
+            onPress={props.onDelete.bind(this, props.id)}
+          >
+            X
+          </AwesomeButtonRick>
+        </View>
       </View>
     </TouchableOpacity>
   );
@@ -18,20 +30,22 @@ export default ListItem;
 
 const styles = StyleSheet.create({
   listItem: {
-    padding: 10,
-    borderRadius: 5,
-    shadowRadius: 5,
-    shadowOffset: { width: 0, height: 2 },
-    shadowColor: "#000",
-    shadowOpacity: 0.25,
-
-    elevation: 5,
-    backgroundColor: "#ccc",
-
     marginVertical: 10,
-    width: "100%",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
   },
   listItemText: {
-    color: "#222",
+    flex: 6,
+    paddingVertical: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    borderBottomColor: "#ccc",
+    borderBottomWidth: 1,
+    marginRight: 20,
+  },
+  button: {
+    flex: 2,
+    alignItems: "center",
   },
 });
