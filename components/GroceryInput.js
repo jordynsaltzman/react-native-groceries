@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, TextInput, View, Button, Modal } from "react-native";
+import { StyleSheet, TextInput, View, Modal } from "react-native";
 import AwesomeButtonRick from "react-native-really-awesome-button/src/themes/rick";
 
 const GroceryInput = (props) => {

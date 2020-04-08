@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Button, FlatList } from "react-native";
+import { StyleSheet, Text, View, FlatList } from "react-native";
 import ListItem from "./components/ListItem";
 import GroceryInput from "./components/GroceryInput";
 import { LinearGradient } from "expo-linear-gradient";
