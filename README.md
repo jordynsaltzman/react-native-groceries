@@ -8,7 +8,12 @@ Overall, this was a good starter project to get aquainted with React Native and 
 
 ## Preview
 
-<img src="assets/images/RN_Screenshot2.png"  width="400">
-<img src="assets/images/RN_Screenshot.png"  width="400">
+|                              Home Screen                   |                      Adding Grocery Item                  |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <img src="assets/images/RN_Screenshot2.png"  width="300">  | <img src="assets/images/RN_Screenshot.png"  width="300">  |
+
+
+
+
 
 
